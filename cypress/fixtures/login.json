@@ -1,6 +1,9 @@
 {
 
     "login": "ls.teste@teste.com",
-    "Senha": "teste@teste.ls1234"
+    "Senha": "teste@teste.ls1234",
+    "loginErrado": "ls.texte@teste.com",
+    "SenhaIncorreta": "jakwhfgkaw"
+
     
 }

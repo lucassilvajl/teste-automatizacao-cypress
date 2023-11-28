@@ -1,11 +1,12 @@
 /// <reference types="cypress" />
 
+const site = require('../fixtures/baseUrl.json')
 
 context('Funcionalidade para adicionar um produto no carrinho', () => {
 
     beforeEach(() => {
 
-        cy.visit('http://lojaebac.ebaconline.art.br/produtos/')
+        cy.visit(site.produtos)
     });
     
     it('Deve adicionar um produto ao carrinho', () => {
