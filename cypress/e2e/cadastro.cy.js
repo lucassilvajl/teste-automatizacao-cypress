@@ -16,13 +16,7 @@ context('Funcionalidade para validar cadastros', () => {
 
     it('Deve realizar cadastro com sucesso', () => {
 
-        cy.get('#reg_email').type(faker.internet.email())
-        cy.get('#reg_password').type('teste@teste.ls1234', {log: false})
-        cy.get(':nth-child(4) > .button').click()
-        cy.get('.woocommerce-MyAccount-navigation-link--edit-account > a').click()
-        cy.get('#account_first_name').type(faker.person.firstName())
-        cy.get('#account_last_name').type(faker.person.lastName())
-        cy.get('.woocommerce-Button').click()
+        cy.cadastro(faker.internet.email(), faker.internet.password(), faker.person.firstName(), faker.person.lastName())
         cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.')
 
         
