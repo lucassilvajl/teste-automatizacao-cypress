@@ -43,3 +43,13 @@ Cypress.Commands.add('cadastro', (usuário, senha, nome, sobrenome) => {
     cy.get('.woocommerce-Button').click()
 
 })
+
+Cypress.Commands.add('cadastro', (usuário, senha) => {
+
+    cy.get('#username').type(usuário)
+    cy.get('#password').type(senha, {log: false})
+    cy.get('.woocommerce-form > .button').click()
+    cy.get('.woocommerce-MyAccount-navigation-link--edit-address > a').click()
+    cy.get(':nth-child(1) > .title > .edit').click()
+
+})
