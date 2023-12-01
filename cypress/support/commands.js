@@ -44,7 +44,7 @@ Cypress.Commands.add('cadastro', (usuário, senha, nome, sobrenome) => {
 
 })
 
-Cypress.Commands.add('cadastro', (usuário, senha) => {
+Cypress.Commands.add('edit_endereco', (usuário, senha) => {
 
     cy.get('#username').type(usuário)
     cy.get('#password').type(senha, {log: false})

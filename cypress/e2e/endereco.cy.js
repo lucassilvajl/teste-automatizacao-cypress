@@ -11,7 +11,7 @@ context('Funcionalidade para realização de cadastro', () => {
     beforeEach(() => {
     
         cy.visit(site.minhaConta)
-        cy.cadastro(perfil.login, perfil.Senha)
+        cy.edit_endereco(perfil.login, perfil.Senha)
     });
 
     it('Deve realizar as alterações de cadastro com sucesso', () => {
