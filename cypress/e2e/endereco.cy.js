@@ -30,7 +30,7 @@ context('Funcionalidade para realização de cadastro', () => {
         
     });
 
-    it.only('Deve realizar alterações de cadastro de envio com sucesso ', () => {
+    it('Deve realizar alterações de cadastro de envio com sucesso ', () => {
 
         cy.get(':nth-child(2) > .title > .edit').click()
         cy.get('#shipping_first_name').clear().type(fakerPT_BR.person.firstName('male'))
