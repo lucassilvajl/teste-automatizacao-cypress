@@ -50,6 +50,6 @@ Cypress.Commands.add('edit_endereco', (usuário, senha) => {
     cy.get('#password').type(senha, {log: false})
     cy.get('.woocommerce-form > .button').click()
     cy.get('.woocommerce-MyAccount-navigation-link--edit-address > a').click()
-    cy.get(':nth-child(1) > .title > .edit').click()
+   
 
 })
